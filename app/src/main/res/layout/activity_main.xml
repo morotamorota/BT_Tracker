@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="330dp"
+        android:background="#EF8F8F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BT_Tracker"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?android:attr/alertDialogIcon" />
+
+    <TextView
+        android:id="@+id/Button_2nd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#91BFE3"
+        android:text="Normal Tempareture"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:onClick="goToNormal_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <TextView
+        android:id="@+id/Button_3rd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DBADE3"
+        android:text="mechanism of fever"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:onClick="goToMechanism_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <TextView
+        android:id="@+id/Button_4th"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D2EFAF"
+        android:text="Handling fever"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:onClick="goToHandling_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <TextView
+        android:id="@+id/Button_1st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EAC691"
+        android:text="Log body Temperature"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:onClick="goToLog_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.135" />
+</androidx.constraintlayout.widget.ConstraintLayout>
