@@ -19,12 +19,13 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/God_help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#9873DA"
         android:text="Help me bro!!!!!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:onClick="goToGod_help"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
