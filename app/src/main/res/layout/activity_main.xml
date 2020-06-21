@@ -9,8 +9,8 @@
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
-        android:layout_height="330dp"
-        android:background="#EF8F8F"
+        android:layout_height="274dp"
+        android:background="#d62828"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,6 +40,7 @@
         app:srcCompat="?android:attr/alertDialogIcon" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="398dp"
         android:layout_height="302dp"
         android:layout_marginLeft="10dp"
@@ -49,17 +50,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85">
+        app:layout_constraintVertical_bias="0.75">
 
         <TextView
             android:id="@+id/Button_1st"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#EAC691"
+            android:background="#ddbea9"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:text="Log body Temperature"
+            android:text="@string/log_body_temperature"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <View
@@ -71,11 +72,11 @@
             android:id="@+id/Button_2nd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#91BFE3"
+            android:background="#93e1d8"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:text="Normal Tempareture"
+            android:text="@string/normal_tempareture"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <View
@@ -87,11 +88,11 @@
             android:id="@+id/Button_3rd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#DBADE3"
+            android:background="#74c69d"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:text="mechanism of fever"
+            android:text="@string/mechanism_of_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <View
@@ -110,8 +111,19 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:text="Handling fever"
+            android:text="@string/handling_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/setReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setReminder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
 </androidx.constraintlayout.widget.ConstraintLayout>
